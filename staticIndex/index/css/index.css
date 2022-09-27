@@ -1,0 +1,194 @@
+body {
+  width: 100%;
+  overflow-y: auto;
+}
+body .header {
+  position: relative;
+  width: 100%;
+  height: 46.66666667vw;
+}
+body .header::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 32vw;
+  background-color: #12B0F9;
+}
+body .header .poster {
+  position: absolute;
+  height: 42.66666667vw;
+  top: 4.26666667vw;
+  left: 2.66666667vw;
+  right: 2.66666667vw;
+}
+body .header .poster img {
+  position: absolute;
+  height: 42.66666667vw;
+  width: 94.66666667vw;
+}
+body .header .poster ul {
+  position: absolute;
+  bottom: 1.86666667vw;
+  left: 42.13333333vw;
+}
+body .header .poster ul .current {
+  width: 6.4vw;
+  background-color: #FFFFFF;
+}
+body .header .poster ul li {
+  float: left;
+  height: 1.06666667vw;
+  width: 1.06666667vw;
+  border-radius: 0.53333333vw;
+  margin: 0 0.53333333vw;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+body .items::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body .items .item {
+  float: left;
+  width: 45.86666667vw;
+  height: 64vw;
+  margin-top: 4vw;
+  margin-left: 2.66666667vw;
+  border-radius: 2.13333333vw;
+  box-shadow: 0px 1.06666667vw 2.66666667vw rgba(0, 0, 0, 0.25);
+}
+body .items .item img {
+  width: 100%;
+  height: 37.86666667vw;
+}
+body .items .item h3 {
+  font-size: 4.8vw;
+  font-weight: 400;
+  margin-top: 1.06666667vw;
+  margin-left: 2.13333333vw;
+  color: #3D3D3D;
+}
+body .items .item .detail {
+  display: flex;
+  margin: 2.66666667vw 0 0 2.13333333vw;
+  height: 5.33333333vw;
+  font-size: 3.2vw;
+  justify-content: flex-start;
+  line-height: 5.33333333vw;
+}
+body .items .item .detail .place {
+  border-radius: 0.53333333vw;
+  display: flex;
+  height: 100%;
+  text-align: center;
+  background-color: #4BADF8;
+  box-sizing: border-box;
+}
+body .items .item .detail .place .origin {
+  width: 7.73333333vw;
+  height: 100%;
+  color: #FFFFFF;
+}
+body .items .item .detail .place .location {
+  line-height: 4.8vw;
+  padding: 0 0.53333333vw;
+  background-color: #FFFFFF;
+  color: #12B0F9;
+  border: 0.26666667vw solid #12B0F9;
+  border-radius: 0.53333333vw;
+  box-sizing: border-box;
+}
+body .items .item .detail .sole {
+  margin-left: 3.2vw;
+  display: flex;
+  font-size: 3.2vw;
+  color: #3D3D3D;
+  width: 14.4vw;
+  justify-content: space-between;
+}
+body .items .item .price-zone {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 5.33333333vw;
+  margin: 1.33333333vw 0 0 2.13333333vw;
+  box-sizing: border-box;
+}
+body .items .item .price-zone .prize {
+  display: flex;
+  height: 16px;
+  box-sizing: border-box;
+  margin-top: 1.06666667vw;
+}
+body .items .item .price-zone .prize .now-prize {
+  width: 10.66666667vw;
+  color: #E84626;
+  font-size: 4.26666667vw;
+  font-weight: 700;
+}
+body .items .item .price-zone .prize .now-prize::before {
+  content: "￥";
+  color: #E84626;
+  font-size: 2.66666667vw;
+  font-weight: 700;
+}
+body .items .item .price-zone .prize .old-prize {
+  width: 6.13333333vw;
+  height: 100%;
+  font-size: 2.66666667vw;
+  color: #999999;
+  text-decoration: line-through;
+  padding-top: 1.33333333vw;
+  margin-left: 1.33333333vw;
+}
+body .items .item .price-zone .prize .old-prize::before {
+  content: "￥";
+  height: 100%;
+  font-size: 2.66666667vw;
+  font-weight: 700;
+  color: #999999;
+  text-decoration: line-through;
+}
+body .items .item .price-zone .add {
+  height: 5.33333333vw;
+  width: 5.33333333vw;
+  background-color: #12B0F9;
+  box-sizing: border-box;
+  background: url(../img/home_icon_add.png);
+  background-size: 5.33333333vw;
+}
+body p {
+  font-size: 3.73333333vw;
+  color: #999999;
+  text-align: center;
+  margin-top: 5.33333333vw;
+  margin-bottom: 20.26666667vw;
+}
+body .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 14.93333333vw;
+  background-color: #FFFFFF;
+}
+body .footer ul {
+  display: flex;
+  justify-content: center;
+}
+body .footer ul .current {
+  color: #12B0F9;
+}
+body .footer ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31.2vw;
+  height: 14.93333333vw;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 3.73333333vw;
+}
+body .footer ul li img {
+  width: 5.33333333vw;
+  height: 5.33333333vw;
+}

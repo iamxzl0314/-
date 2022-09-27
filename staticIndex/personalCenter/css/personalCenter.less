@@ -1,0 +1,178 @@
+@rate:(100vw/375);
+
+body{
+    //头部
+.user-info{
+    border-top:  1*@rate solid rgba(186,232,253,1);
+    height: 200*@rate;
+    width: 375*@rate;
+    background:-webkit-linear-gradient(rgba(186,232,253,1),rgba(255,247,247,0));
+    font-family: Source Han Sans CN-Medium, Source Han Sans CN;
+
+    //欢迎用户栏 
+    .user{
+        margin:22*@rate 0 0 15*@rate;
+        font-size: 18*@rate;
+        img{
+            height: 60*@rate;
+            width: 60*@rate;
+            vertical-align: middle;
+            margin-right: 10*@rate;
+        }
+    }
+
+    //订单、选项栏
+    .info{
+        width: 345*@rate;
+        height: 120*@rate;
+        margin: 33*@rate auto 0;
+        border-radius: 8*@rate;
+        background-color: #FFFFFF;
+        box-shadow: 0 4*@rate 10*@rate 0*@rate rgba(0, 0, 0, .25);
+        
+        .order{
+            display: flex;
+            justify-content: space-between;
+            height:42*@rate;
+            border-radius: 8*@rate 8*@rate 0 0;
+            border-bottom: 1*@rate solid rgba(216, 216, 216, 1);
+            line-height: 42*@rate;
+            :first-child{
+                color: #3D3D3D ;
+                font-size: 14*@rate;
+                margin-left: 10*@rate;
+                font-weight: 700;
+            }
+            :last-child{
+                font-size: 10*@rate;
+                color: #666666 ;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    height: 10*@rate;
+                    width: 10*@rate;
+                    background: url(../img/chevron-states.png);
+                    background-size: 10*@rate;
+                    vertical-align: middle;
+                    margin-right: 10*@rate;
+                }
+            }
+            
+        }
+
+        .option{
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height:77*@rate;
+                    width: 69*@rate;
+                    img{
+                        height: 24*@rate;
+                        width: 24*@rate;
+                    }
+                    span{
+                        font-size: 12*@rate;
+                        color: #3D3D3D ;
+                        margin-top: 3*@rate;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
+}
+
+    //客服、地址、商家资质栏
+.option-bar{
+    margin-top: 47*@rate;
+    ul{
+        width: 345*@rate;
+        height: 150*@rate;
+        border-radius: 8*@rate;
+        margin: auto;
+        box-shadow: 0 4*@rate 10*@rate rgba(0, 0, 0, .25);
+        li{
+            position: relative;
+            display: flex;
+            height: 50*@rate;
+            width: 345*@rate;
+            line-height: 50*@rate;
+            border-bottom: 1*@rate solid #D8D8D8;
+            &::after{
+                position: absolute;
+                right: 10*@rate;
+                top: 20*@rate;
+                content: "";
+                height: 12*@rate;
+                width: 12*@rate;
+                background: url(../img/chevron-states.png) no-repeat;
+                background-size: 12*@rate;
+            }
+            .addiction{
+                position: absolute;
+                right: 27*@rate;
+                i{
+                    font-style: normal;
+                    color: #12B0F9;
+                }
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            img{
+                margin: 14*@rate 10*@rate 0 15*@rate;
+                height: 24*@rate;
+                width: 24*@rate;
+            }
+            span{
+                font-size: 12*@rate;
+                color: #3D3D3D;
+            }
+        }
+    }
+}
+
+    //底部导航栏
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56*@rate;
+    background-color:#FFFFFF;
+    ul{
+        display: flex;
+        justify-content:center;
+
+        .current{
+            color: #12B0F9;
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 117*@rate;
+            height: 56*@rate;
+            color: rgba(0, 0, 0, .9);
+            font-size: 10*@rate;
+            img{
+                width: 20*@rate;
+                height: 20*@rate;     
+                margin-bottom: 2*@rate;    
+            }
+        }
+    }
+}
+
+}

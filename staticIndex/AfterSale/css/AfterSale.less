@@ -1,0 +1,236 @@
+@rate:(100vw/375);
+@NomalFontColor:#3D3D3D;
+
+//订单
+.order{
+    width: 345*@rate;
+    height: 146*@rate;
+    margin: 10*@rate auto;
+    box-shadow: 0 4*@rate 10*@rate rgba(0, 0, 0, .25);
+    border-radius: 8*@rate;
+    .order-head{
+        height: 44*@rate;
+        background-color: #DDF0F9 ;
+        border-radius: 8*@rate 8*@rate 0 0;
+        line-height: 44*@rate;
+        span{
+            font-size: 12*@rate;
+            color: @NomalFontColor;
+            &:first-child{
+                margin-left: 10*@rate;
+            }
+        }
+        .order-time{
+            float: right;
+            margin-right: 10*@rate;
+        }
+    }
+
+    .order-body{
+        display: flex;
+        border-top:1*@rate solid transparent;
+        height: 102*@rate;
+        .pict-container{
+            display: flex;
+            margin: 11*@rate 10*@rate;
+            width: 80*@rate;
+            height: 80*@rate;
+            justify-content:center;
+            img{
+                height: 80*@rate;
+            }
+        }
+        .order-detail{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: @NomalFontColor;
+            h3{
+                font-size: 18*@rate;
+                font-weight: 400;
+            }
+            p{
+                font-size: 12*@rate;
+                margin: 5*@rate 0;
+            }
+            div{
+                width:245*@rate ;
+                height: 20*@rate;
+                display: flex;
+                justify-content: space-between;
+                line-height: 20*@rate;
+                .prize{
+                    font-size: 20*@rate;
+                    color: #E84626 ;
+                    font-weight: 700;
+                    &::before{
+                        content: "￥";
+                        font-size: 12*@rate;
+                    }
+                }
+                .quantity{
+                    font-size:12*@rate;
+                    float: right;
+                    margin-right: 10*@rate;
+                    &::before{
+                        content: "x";
+                        font-size: 12*@rate;
+                    }
+                }
+            }
+        }
+       
+
+    }
+
+}
+
+
+// reason
+.reason-box{
+    height: 380*@rate;
+    width: 345*@rate;
+    margin: auto;
+    border-radius: 8*@rate;
+    box-shadow: 0*@rate 4*@rate 10*@rate rgba(0, 0, 0, .25);
+    .reason{
+        display: flex;
+        height: 48*@rate;
+        font-size: 14*@rate;
+        line-height: 48*@rate;
+        border-bottom: #D8D8D8 1*@rate solid;
+        justify-content: space-between;
+        box-sizing: border-box;
+        span{
+            margin-left:10*@rate;
+        }
+        a{
+            display: flex;
+            height: 100%;
+            margin-right: 10*@rate;
+            font-size: 10*@rate;
+            color:#666666;
+            align-items: center;
+            span{
+                margin: 0;
+            }
+            &::after{
+                content: "";
+                display: inline-block;
+                height:12*@rate;
+                width: 12*@rate;
+                vertical-align: baseline;
+                background: url(../img/icon_arrow12_down.png) no-repeat;
+                background-size: 12*@rate;
+            }
+        }
+    }
+
+    .refund{
+        display: flex;
+        flex-direction: column;
+        height: 76*@rate;
+        border-bottom: #D8D8D8 1*@rate solid;
+        justify-content: space-around;
+        box-sizing: border-box;
+        .title{
+            font-size: 14*@rate;
+            margin-left: 10*@rate;
+        }
+
+        .detail{
+            font-size: 18*@rate;
+            font-weight: 700;
+            padding-left: 10*@rate;
+            a{
+                display: flex;
+                align-items: center;
+                float: right;
+                margin-right: 9*@rate;
+                font-size: 10*@rate;
+                color: #12B0F9;
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    height: 16*@rate;
+                    width: 16*@rate;
+                    background-color: #E84626;  
+                    background: url(../img/after_icon_edit.png) no-repeat;
+                    background-size: 16*@rate;  
+                    margin-right:5*@rate;
+                }
+            }
+        }
+
+
+
+
+        
+
+
+    }
+
+    .info-addition{
+        height: 256*@rate;
+        h3{
+            height: 50*@rate;
+            font-size: 14*@rate;
+            color: @NomalFontColor;
+            font-weight: 400;
+            line-height: 50*@rate;
+            margin-left: 10*@rate;
+        }
+        .pict-upload{
+            position: relative;
+            width: 300*@rate;
+            height: 160*@rate;
+            margin: auto;
+            border-radius: 8*@rate;
+            border: dotted 1*@rate #999999;
+            .remainder1{
+                font-size: 12*@rate;
+                height: 34*@rate;
+                line-height: 34*@rate;
+                color: @NomalFontColor;
+                padding-left: 10*@rate;
+            }
+            .cam{
+                position: absolute;
+                bottom: 49*@rate;
+                height: 24*@rate;
+                width: 24*@rate;
+                left: 138*@rate;
+                background: url(../img/evaluate_icon_camera.png) no-repeat;
+                background-size: 24*@rate;
+            }
+            .remainder2{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                font-size: 10*@rate;
+                color: #666666;
+                padding: 0;
+                line-height: 0;
+                bottom: 37*@rate                
+            }
+        }
+
+    }
+
+
+
+
+}   
+
+button{
+    font-size: 14*@rate;
+    width: 345*@rate;
+    height: 30*@rate;
+    background-color: #12B0F9;
+    text-align: center;
+    line-height: 30*@rate;
+    margin: 71*@rate 15*@rate 0;
+    border: none;
+    color: #fff;
+    border-radius: 8*@rate;
+}

@@ -1,0 +1,152 @@
+body .user-info {
+  border-top: 0.26666667vw solid #bae8fd;
+  height: 53.33333333vw;
+  width: 100vw;
+  background: -webkit-linear-gradient(#bae8fd, rgba(255, 247, 247, 0));
+  font-family: Source Han Sans CN-Medium, Source Han Sans CN;
+}
+body .user-info .user {
+  margin: 5.86666667vw 0 0 4vw;
+  font-size: 4.8vw;
+}
+body .user-info .user img {
+  height: 16vw;
+  width: 16vw;
+  vertical-align: middle;
+  margin-right: 2.66666667vw;
+}
+body .user-info .info {
+  width: 92vw;
+  height: 32vw;
+  margin: 8.8vw auto 0;
+  border-radius: 2.13333333vw;
+  background-color: #FFFFFF;
+  box-shadow: 0 1.06666667vw 2.66666667vw 0vw rgba(0, 0, 0, 0.25);
+}
+body .user-info .info .order {
+  display: flex;
+  justify-content: space-between;
+  height: 11.2vw;
+  border-radius: 2.13333333vw 2.13333333vw 0 0;
+  border-bottom: 0.26666667vw solid #d8d8d8;
+  line-height: 11.2vw;
+}
+body .user-info .info .order :first-child {
+  color: #3D3D3D;
+  font-size: 3.73333333vw;
+  margin-left: 2.66666667vw;
+  font-weight: 700;
+}
+body .user-info .info .order :last-child {
+  font-size: 2.66666667vw;
+  color: #666666;
+}
+body .user-info .info .order :last-child::after {
+  content: "";
+  display: inline-block;
+  height: 2.66666667vw;
+  width: 2.66666667vw;
+  background: url(../img/chevron-states.png);
+  background-size: 2.66666667vw;
+  vertical-align: middle;
+  margin-right: 2.66666667vw;
+}
+body .user-info .info .option ul {
+  display: flex;
+  justify-content: space-around;
+}
+body .user-info .info .option ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20.53333333vw;
+  width: 18.4vw;
+}
+body .user-info .info .option ul li img {
+  height: 6.4vw;
+  width: 6.4vw;
+}
+body .user-info .info .option ul li span {
+  font-size: 3.2vw;
+  color: #3D3D3D;
+  margin-top: 0.8vw;
+  font-weight: 700;
+}
+body .option-bar {
+  margin-top: 12.53333333vw;
+}
+body .option-bar ul {
+  width: 92vw;
+  height: 40vw;
+  border-radius: 2.13333333vw;
+  margin: auto;
+  box-shadow: 0 1.06666667vw 2.66666667vw rgba(0, 0, 0, 0.25);
+}
+body .option-bar ul li {
+  position: relative;
+  display: flex;
+  height: 13.33333333vw;
+  width: 92vw;
+  line-height: 13.33333333vw;
+  border-bottom: 0.26666667vw solid #D8D8D8;
+}
+body .option-bar ul li::after {
+  position: absolute;
+  right: 2.66666667vw;
+  top: 5.33333333vw;
+  content: "";
+  height: 3.2vw;
+  width: 3.2vw;
+  background: url(../img/chevron-states.png) no-repeat;
+  background-size: 3.2vw;
+}
+body .option-bar ul li .addiction {
+  position: absolute;
+  right: 7.2vw;
+}
+body .option-bar ul li .addiction i {
+  font-style: normal;
+  color: #12B0F9;
+}
+body .option-bar ul li:last-child {
+  border-bottom: none;
+}
+body .option-bar ul li img {
+  margin: 3.73333333vw 2.66666667vw 0 4vw;
+  height: 6.4vw;
+  width: 6.4vw;
+}
+body .option-bar ul li span {
+  font-size: 3.2vw;
+  color: #3D3D3D;
+}
+body .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 14.93333333vw;
+  background-color: #FFFFFF;
+}
+body .footer ul {
+  display: flex;
+  justify-content: center;
+}
+body .footer ul .current {
+  color: #12B0F9;
+}
+body .footer ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31.2vw;
+  height: 14.93333333vw;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 2.66666667vw;
+}
+body .footer ul li img {
+  width: 5.33333333vw;
+  height: 5.33333333vw;
+  margin-bottom: 0.53333333vw;
+}

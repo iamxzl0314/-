@@ -1,0 +1,251 @@
+@rate:(100vw/375);
+@NomalFontColor:#3D3D3D;
+
+body{
+
+    // box1
+    .poster{
+        height: 312*@rate;
+        box-shadow: 0 4*@rate 10*@rate rgba(0,0,0,.25);
+        border-radius: 0 0 8*@rate 8*@rate;
+        img{
+            height: 210*@rate;
+            width: 375*@rate;
+            border: none;
+        }
+        h3{
+            font-size: 18*@rate;
+            font-weight: 400;
+            margin-left: 8*@rate;
+            color:@NomalFontColor
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            height: 24*@rate;
+            width: 355*@rate;
+            margin: auto;
+            margin-top: 8*@rate;
+            p{
+                height: 100%;
+                font-size:12*@rate;
+                color: @NomalFontColor ;
+                line-height: 24*@rate;
+            }
+            .place{
+                height: 100%;
+                display: flex;
+                font-size: 12*@rate;
+                background-color: #12B0F9;
+                border-radius: 2*@rate;
+               :first-child{
+                   color: #FFFFFF;
+                   padding: 0 2*@rate;
+                   line-height: 24*@rate;
+
+               }
+               :last-child{
+                   border: #12B0F9 1*@rate solid;
+                   background-color: #FFFFFF;
+                   color: #12B0F9;
+                   padding: 0 2*@rate;
+                   border-radius: 2*@rate;
+                   line-height: 22*@rate;
+
+               }
+            }
+        }
+
+        .prize{
+            height:16*@rate ;
+            margin-top: 10*@rate;
+            font-size: 16*@rate;
+            :first-child{
+                margin-left: 10*@rate;
+                font-size: 16*@rate;
+                color: #E84626;
+                &::before{
+                    content: "￥";
+                    font-weight: 700;
+                    font-size: 10*@rate;
+                    
+                }
+            }
+            :last-child{
+                text-decoration: line-through;
+                font-size: 10*@rate;
+                color: #999999 ;
+                &::before{
+                    content: "￥";
+                    
+                }
+
+            }
+        }
+
+    }
+
+    // box2
+    .info-bar{
+        margin-top: 10*@rate;
+        box-shadow: 0 4*@rate 10*@rate rgba(0,0,0,.25);
+        border-radius: 8*@rate;
+        ul{
+
+            li{
+                height:44*@rate;
+                line-height: 44*@rate;
+                font-size: 12*@rate;
+                color: @NomalFontColor;
+                border-bottom: #D8D8D8 1*@rate solid;
+                padding-left: 10*@rate;
+            }
+            :last-child{
+                border-bottom: none;
+            }
+        }
+    }
+
+    // box3
+    .commen{
+        height: 100*@rate;
+        margin-top: 10*@rate;
+        box-shadow: 0 4*@rate 10*@rate rgba(0,0,0,.25);
+        border-radius: 8*@rate;
+        .head{
+            width: 355*@rate;
+            margin: auto;
+            height: 30*@rate;
+            line-height: 30*@rate;
+            font-size: 12*@rate;
+            color: @NomalFontColor;
+            .all{
+                display: block;
+                height: 30*@rate;
+                float: right;
+                color: #3662EC ;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    height: 10*@rate;
+                    width: 12*@rate;
+                    background:url(../img/chevron-states.png) no-repeat;
+                }
+            }
+        }
+
+        .commen-item{
+            width: 355*@rate;
+            margin: auto;
+            height: 70*@rate;
+            img{
+                float: left;
+                height: 48*@rate;
+                width: 48*@rate;
+                vertical-align: top;
+                margin-right: 8*@rate;
+                margin-top: 2*@rate;
+            }
+            ul{
+                float: right;
+                width: 299*@rate;
+                height: 12*@rate;
+                li{
+                    float: right;
+                    height: 12*@rate;
+                    width: 12*@rate;
+                    background:url(../img/details_star-states.png) no-repeat;
+                    background-size: 12*@rate;
+                }
+            }
+            h3{
+                float: left;
+                width: 299*@rate;
+                font-size: 16*@rate;
+                font-weight: 400;
+                margin-top: -5*@rate;
+            }
+            p{
+                margin-top: 2*@rate;
+                width: 299*@rate;
+                font-size: 12*@rate;
+                float: left;
+            }
+        }
+
+
+    }
+
+    //商品详情
+    .product-detail-title{
+        font-size: 18*@rate;
+        text-align: center;
+        font-weight: 400;
+        margin: 14*@rate auto
+    }
+
+    //商品详情图片
+    .product-detail{
+        width: 100%;
+        :last-child{
+            margin-bottom: 56*@rate;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+
+
+
+    // 底部
+    .footer{
+        position: fixed;
+        bottom: 0;
+        height: 56*@rate;
+        width: 100%;
+        background-color:#FFFFFF;
+
+        .footer-left{
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-left: 36*@rate;
+            img{
+                height: 28*@rate;
+                width: 28*@rate;
+            }
+            span{
+                margin-top: 2*@rate;
+                font-size: 10*@rate;
+                color: rgba(0, 0, 0, .9);
+            }
+        }
+        .footer-right{
+            display: flex;
+            float: right;
+            width: 176*@rate;
+            height: 28*@rate;
+            background-color: #FF8F1F;
+            margin: 15*@rate 23*@rate 0 0;
+            border-radius: 8*@rate;
+            span{
+                width: 88*@rate;
+                height: 100%;
+                text-align: center;
+                line-height: 28*@rate;
+                font-size: 12*@rate;
+                color: #FFFFFF;
+                &:last-child{
+                    background-color: #12B0F9 ;
+                    border-radius: 0 8*@rate 8*@rate 0;
+                }
+            }
+        }
+
+    }
+
+}

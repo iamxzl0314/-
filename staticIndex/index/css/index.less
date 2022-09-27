@@ -1,0 +1,227 @@
+@rate:(100vw/375);
+
+body{
+    width: 100%;
+    // height: 2000px;
+    overflow-y: auto;
+
+    // 头部、广告
+    .header{
+        position: relative;
+        width: 100%;
+        height: 175*@rate ;
+        &::before{
+            content: "";
+            display: block;
+            width: 375*@rate;
+            height: 120*@rate;
+            background-color: #12B0F9;
+        }
+        .poster{
+            position: absolute;
+            height: 160*@rate;
+            top: 16*@rate;
+            left: 10*@rate;
+            right: 10*@rate;
+            img{
+                position: absolute;
+                height: 160*@rate;
+                width:355*@rate ;
+            }
+            ul{
+                position: absolute;
+                bottom: 7*@rate;
+                left: 158*@rate;
+                
+                .current{
+                    width: 24*@rate;
+                    background-color: #FFFFFF;
+                }
+
+                li{  
+                    float: left;
+                    height: 4*@rate;
+                    width: 4*@rate;
+                    border-radius: 2*@rate;
+                    margin: 0 2*@rate;
+                    background-color: rgba(255,255,255,.65);
+                }
+
+
+            } 
+            
+
+        }
+       
+    }
+
+    //物品信息
+    .items{ 
+        &::after{
+            content: "";
+            display: block;
+            clear: both 
+        }
+        .item{
+            float: left;
+            width: 172*@rate;
+            height: 240*@rate;
+            margin-top: 15*@rate;
+            margin-left: 10*@rate;
+            border-radius: 8*@rate;
+            box-shadow: 0px 4*@rate 10*@rate rgba(0, 0, 0, 0.25);
+            img{
+                width: 100%;
+                height: 142*@rate;
+            }
+            h3{
+                font-size: 18*@rate;
+                font-weight: 400;
+                margin-top:4*@rate;
+                margin-left: 8*@rate;
+                color: #3D3D3D;
+            }
+
+            .detail{
+                display: flex;
+                margin: 10*@rate 0 0 8*@rate;
+                height: 20*@rate;
+                font-size: 12*@rate;
+                justify-content:flex-start;
+                line-height: 20*@rate;
+                .place{
+                    border-radius: 2*@rate;
+                    display: flex;
+                    height: 100%;
+                    text-align: center;
+                    background-color: #4BADF8 ;
+                    box-sizing: border-box;
+                    .origin{
+                        width:29*@rate;
+                        height: 100%;
+                        color: #FFFFFF;
+                    }
+                    .location{
+                        line-height: 18*@rate;
+                        padding: 0 2*@rate;
+                        background-color: #FFFFFF;
+                        color: #12B0F9;
+                        border: 1*@rate solid #12B0F9;
+                        border-radius: 2*@rate;
+                        box-sizing: border-box;
+                    }
+                }
+                .sole{
+                    margin-left:12*@rate ;
+                    display: flex;
+                    font-size: 12*@rate;
+                    color: #3D3D3D;
+                    width: 54*@rate;
+                    justify-content: space-between;
+                }
+            }
+
+            .price-zone{
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                height: 20*@rate;
+                margin: 5*@rate 0 0 8*@rate;
+                box-sizing: border-box;
+                .prize{
+                    display: flex;
+                    height: 16px;
+                    box-sizing: border-box;
+                    margin-top: 4*@rate;
+                    .now-prize{
+                        width: 40*@rate;
+                        color: #E84626;
+                        font-size: 16*@rate;
+                        font-weight: 700;
+                        &::before{
+                            content: "￥";
+                            color: #E84626;
+                            font-size: 10*@rate;
+                            font-weight: 700;
+                        }
+                    }
+                    .old-prize{
+                        width: 23*@rate;
+                        height: 100%;
+                        font-size: 10*@rate;
+                        color: #999999;
+                        text-decoration: line-through;
+                        padding-top: 5*@rate;
+                        margin-left: 5*@rate;
+                        &::before{
+                            content: "￥";
+                            height: 100%;
+                            font-size: 10*@rate;
+                            font-weight: 700;
+                            color: #999999;
+                            text-decoration: line-through;
+                        }
+
+                    }
+                    
+                }
+                .add{
+                    height: 20*@rate;
+                    width: 20*@rate;
+                    background-color: #12B0F9;
+                    box-sizing: border-box;
+                    background: url(../img/home_icon_add.png);
+                    background-size: 20*@rate;
+                }
+            }
+
+            
+        }
+    }
+
+    //提醒栏
+    p{
+        font-size: 14*@rate;
+        color: #999999;
+        text-align: center;
+        margin-top: 20*@rate;
+        margin-bottom: 76*@rate;
+    }
+
+
+    //导航栏
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 56*@rate;
+        background-color: #FFFFFF;
+        ul{
+            display: flex;
+            justify-content:center;
+
+            .current{
+                color: #12B0F9;
+            }
+
+            li{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 117*@rate;
+                height: 56*@rate;
+                color: rgba(0, 0, 0, .9);
+                font-size: 14*@rate;
+                img{
+                    width: 20*@rate;
+                    height: 20*@rate;                }
+            }
+        }
+    }
+
+
+}
+
+
+
